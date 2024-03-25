@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         body{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transform: perspective(800px);
+            }
+            .box{
+                position: relative;
+                width: 250px;
+                height: 200px;
+                background-color: transparent;
+                transform-style: preserve-3d;
+                transform: rotateX(-15deg) rotateY(0deg);
+                transition: 1s transform;
+                cursor: pointer;
+                
+            }
+            .side{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width :100%;
+                height: 100%;
+                border-radius: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: pointer;
+            }
+            .points {
+        position: absolute;
+        margin: -10px;
+        bottom: -30px; 
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    
+    .points:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+            .s1{ background-image: url(https://www.graiet.tn/media/catalog/product/cache/595488aa9cf14b0e44a19e9859f2c227/c/a/carte_fid_lit_prime_1.png);
+                transform: rotateY(0deg) translateZ(250px);
+            }
+            .s2{ background-image: url(https://mg.tn/img/cms/club-mg-card.jpg);
+                transform: rotateY(60deg) translateZ(250px);
+            }
+            .s3{ background-image: url(https://maxi.cdnartwhere.eu/wp-content/uploads/article/2016-01/casino-963x542-c-default.jpg?ck=37a6259cc0c1dae299a7866489dff0bd);
+                transform: rotateY(120deg) translateZ(250px);
+            }
+            .s4{ background-image: url(https://kamoucha.files.wordpress.com/2013/10/monoprix.jpg);
+                transform: rotateY(180deg) translateZ(250px);
+            }
+            .s5{ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZmjILbjti4vZJJdqiVXM3EYIfHdC9FF_7s_z2mqfpA&s);
+                transform: rotateY(240deg) translateZ(250px);
+            }
+            .s6{ background-image: url(https://kamoucha.files.wordpress.com/2013/10/fatales-tunisie-jpg.jpg);
+                transform: rotateY(300deg) translateZ(250px);
+            }
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="side s1">
+                <div class="points"></div>
+            </div>
+            <div class="side s2">
+                <div class="points"></div>
+            </div>
+            <div class="side s3">
+              <div class="points"></div>
+            </div>
+            <div class="side s4">
+                <div class="points"></div>
+            </div>
+            <div class="side s5">
+                <div class="points"></div>
+            </div>
+            <div class="side s6">
+              <div class="points"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        let box = document.querySelector('.box'),
+        sides = document.querySelectorAll('.side');
+        sides.forEach((side, i) => {
+            side.addEventListener('click', () => {
+                box.style.transform = `rotateX(-15deg) rotateY(${i*60}deg)`;
+            });
+        });
+        if <div class = "quiz-score flex">
+                    <span id = "correct-score"></span>/<span id = "total-question"></span>
+                </div>
+            </div>
+        </script>
+    </body>
+    </html>
+    
