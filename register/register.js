@@ -11,9 +11,8 @@ form.addEventListener('submit', function(event) {
     localStorage.setItem("maxi-mag",0);
     const user = document.getElementById("user");
     localStorage.setItem("user",user.value);
-console.log(user.value);
+
     event.preventDefault();
     window.location.href = '../home page/homepage2.html';
 
-    console.log('Form submitted!');
 });

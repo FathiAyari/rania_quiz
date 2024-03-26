@@ -98,7 +98,7 @@ const MAX_QUESTIONS = 10;
 scoreText.innerText=0;
 // Start Game & Timer
 startGame = () => {
-  console.log(score);
+
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
