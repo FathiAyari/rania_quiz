@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel=" stylesheet" href="registration.css">
-    <title>Document</title>
+    <title>win-win</title>
 
 </head>
 <body>
     <div class ="container">
-        <form id="registrationForm" action="" method="post">
+        <form id="myForm" method="post">
             <h2>Registration</h2>
             <div class="content">
+
                 <div class="input-box">
-                    <label for="name">Full name</label>
-                    <input type="text" placeholder="Enter Full Name" name="name" required>
-                </div>
-                <div class="input-box">
-                    <label for="username">Username </label>
-                    <input type="text" placeholder="Enter Username" name="usename" required>
+                    <label for="username">Nom complet </label>
+                    <input type="text" placeholder="Nom complet" id="user" name="user" required>
                 </div>
                 <div class="input-box">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Enter your valid email address" name="email" required>
+                    <input type="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="input-box">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter new password" name="password" required>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" placeholder="Mot de passe" name="password" required>
                 </div>
                 <div class="input-box">
-                    <label for="confirmPassword">confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" name="confirmPassword" required>
+                    <label for="confirmPassword">confirmer Mot de passe</label>
+                    <input type="password" placeholder="mot de passe" name="confirmPassword" required>
                 </div>
                 <span class="gender-title">Gender</span>
                 <div class="gender-category">
@@ -45,11 +42,11 @@
                 <div class="button-container">
                 <button type="submit">Register</button></div>
                 <div class="login-register">
-                    <p>Already have an account? <a href="homepage.html">Login</a></p>
+                    <p>Vous avez déjà un compte?<a href="../login/login.html">Login</a></p>
                 </div>
            
         </form> 
     </div>
-    <script src="script.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
